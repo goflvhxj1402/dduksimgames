@@ -1,0 +1,95 @@
+
+#slogan{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Loading/SceneEffect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0%;
+    position: relative;
+    overflow: hidden;
+}
+#sloganList{
+    width: 100%;
+    height: 100%;
+}
+#sloganList li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#sloganList li:nth-of-type(1){
+    position: relative;
+}
+#sloganList li:nth-of-type(1) p{
+    position: absolute;
+    top: 25%;
+}
+#crackWrap{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/Slogan/CrackBlack.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 50%;
+}
+#crack{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Slogan/CrackWrapWhite.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    transition: 0.5s;
+}   
+#hammer{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: -2000px;
+    background-image: url(../img/Slogan/HammerBlack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#sloganList li:nth-of-type(2){
+    background-image: url(../img/Slogan/Slogan1.png);
+    left: -100%;
+}
+#sloganList li:nth-of-type(3){
+    background-image: url(../img/Slogan/Slogan2.png);
+    left: 200%;
+}
+#sloganList li:nth-of-type(4){
+    background-image: url(../img/Slogan/Slogan3.png);
+    top: -100%;
+}
+#sloganList li:nth-of-type(5){
+    background-image: url(../img/Slogan/Slogan4.png);
+    top: 100%;
+}
+#sloganList li p{
+    font-family: "SUB";
+    font-weight: bold;
+    font-size: calc(100vw * (66/1920));
+    opacity: 0;
+    transition: 0.2s;
+}
+#sloganList li:nth-of-type(1) p{
+    opacity: 1;
+}

@@ -1,0 +1,93 @@
+body{
+    background-color: #191919;
+}
+#header{
+    width: 100%;
+    height: 71px;
+
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+
+    border-bottom: 1px solid white;
+    visibility: hidden;
+
+    transition: 0.8s;
+}
+#header .font_black{
+    color: black;
+}
+#header .font_white{
+    color: white;
+}
+#header h1{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+
+    background-image: url(../img/Header/whiteLogo.png);
+    background-size: contain;
+}
+#gnb{
+    width: 45%;
+    height: 100%;
+}
+#gnbList{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    line-height: 80px;
+}
+#gnbList li a{
+    display: block;
+
+    font-family: "SUB";
+    font-size: calc(100vw * (15 / 1920));
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#utilList{
+    position: absolute;
+    right: 20px;
+    width: 10%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#utilList li:nth-of-type(1){
+    width: 60%;
+    height: 35px;
+}
+#utilList li:nth-of-type(2){
+    width: 30%;
+    height: 35px;
+}
+#utilList li:last-child a{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Header/whiteNav.png);
+    background-size: contain;
+}
+#utilList li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: "SUB";
+    font-weight: 900;
+}
+#langSelect{
+    font-size: calc(100vw * (16 / 1920));
+}
+#langSelect dl{
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10%;
+}

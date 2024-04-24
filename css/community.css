@@ -1,0 +1,57 @@
+
+#community{
+    background-color: #191919;
+    background-image: linear-gradient(to bottom, black, #191919);
+}
+#communityWrap{
+    width: 72%;
+    height: calc(100vw * (1080/1920));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 280px;
+}
+#cardWrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#cardWrap li{
+    width: 22vw;
+    height: 22vw;
+    background: linear-gradient(180deg, #C99FFF, #17cbc5,  #C99FFF);
+    background-size: 200% 100%;
+    background-position-x: left;
+    border-radius: calc(100vw * 20/1920);
+    transition: 0.5s;
+}
+#cardWrap li:hover{
+    background-image: linear-gradient(45deg, #17cbc5, #C99FFF,  #17cbc5);
+    background-position-x: 100%;
+}
+#cardWrap li dl{
+    height: 100%;
+    padding: 10%;
+}
+#cardWrap li dl dt{
+    font-size: calc(100vw * 36/1920);
+    font-weight: 600;
+    font-family: "SUB";
+    color: white;
+    height: 30%;
+    text-shadow: 0 0 10px #191919;
+}
+#cardWrap li dl dd{
+    font-size: calc(100vw * 22/1920);
+    font-weight: 600;
+    font-family: "SUB";
+    color: white;
+    text-shadow: 0 0 7px #333232;
+}
+/* @media all and (max-width: 1200px){
+    #communityWrap{
+        height: 100vh;
+    }
+} */

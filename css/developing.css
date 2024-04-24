@@ -1,0 +1,72 @@
+
+#developingGame{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+#developWrap{
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Develop/commingSoon2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    padding-bottom: 140px;
+}
+#developTextWrap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+#developTextWrap dt{
+    color: white;
+    font-family: "TITLE";
+    font-size: calc(100vw * (54/1920));
+    text-shadow: 0 1px calc(100vw * (30/1920)) #47BDFF;
+    order: 1;
+    line-height: calc(100vw * (100/1920));
+}
+#developTextWrap dd{
+    color: white;
+    font-family: "SUB";
+   
+    text-transform: uppercase;
+}
+#developTextWrap dd:nth-of-type(1){
+    font-size: calc(100vw * (24/1920));
+    line-height: calc(100vw * (24/1920));
+}
+#developTextWrap dd:nth-of-type(2){
+    font-size: calc(100vw * (100/1920));
+    line-height: calc(100vw * (80/1920));
+    font-weight: 700;
+}
+#developCharacter{
+    color: white;
+    font-family: "TITLE";
+    font-size: calc(100vw * (60 / 1920));
+    text-shadow: 2px 4px 14px #191919;
+    text-align: center;
+    line-height: calc(100vw * (180 / 1920));
+    width: calc(100vw * (180 / 1920));
+    height: calc(100vw * (180 / 1920));
+    background-image: url(../img/Develop/bubbleTSprite.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+
+    position: absolute;
+    bottom: calc(100vw * (100 / 1920));
+    left: 50% - calc(100vw * (90 / 1920));;
+}
+/* @media all and (max-width: 1200px){
+    #developWrap{
+        height: 100vh;
+    }
+} */

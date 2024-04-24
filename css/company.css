@@ -1,0 +1,111 @@
+
+#company{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Company/lightWhiteBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 71px;
+}
+#companyWrap{
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#companyWrap ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#companyWrap ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#companyType1{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+#companyType1 p:nth-of-type(1){
+    color: black;
+    font-size: calc(100vw * (66.4 / 1920));
+    font-family: "SUB";
+    font-weight: bold;
+}
+#companyType1 p:nth-of-type(2){
+    color: black;
+    font-size: calc(100vw * (30 / 1920));
+    font-family: "SUB";
+    font-weight: 700;
+}
+#companyType2{
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    opacity: 0;
+}
+#companyType2 p:nth-of-type(1){
+    font-size: calc(100vw * (66.4 / 1920));
+    font-family: "SUB";
+    font-weight: bold;
+}
+#companyType2 p:nth-of-type(2){
+    font-size: calc(100vw * (30 / 1920));
+    font-family: "SUB";
+
+    margin-bottom: calc(100vw * (80 / 1920));
+}
+#companyType2 div{
+    width: calc(100vw * (100 / 1920));
+    height: calc(100vw * (100 / 1920));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    background-image: url(../img/Company/botArrow.png);
+    background-size: calc(100vw * (35 / 1920)) calc(100vw * (17.5 / 1920));
+    background-repeat: no-repeat;
+    background-position: center bottom calc(100vw * (10 / 1920));
+
+    font-size: calc(100vw * (15 / 1920));
+    font-family: "TITLE";
+    order: 2;
+
+    animation-name : arrowMove;   
+	animation-duration : 0.5s;              
+	animation-iteration-count : infinite; 
+	animation-timing-function : ease-in-out; 
+    animation-direction: alternate; 
+}
+@keyframes arrowMove {
+    0%{
+        background-position: center bottom calc(100vw * (7 / 1920));
+    }
+    100%{
+        background-position: center bottom calc(100vw * (2 / 1920));
+    }
+}
+#companyType2 p:nth-of-type(3){
+    font-size: calc(100vw * (25 / 1920));
+    font-family: "SUB";
+    margin-bottom: calc(100vw * (80 / 1920));
+}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* Font */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body { 
+ font-family: 'SUB';
+}
+@font-face {
+    font-family: 'TITLE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/KNUTRUTHTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Init */
+*{
+    box-sizing: border-box;
+}
+body, h1, ul, li, a, dl, dt, dd, p, small{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    overflow: hidden;
+}
+/* hidden */
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.hideText{
+    text-indent: -300vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* img */
+.imgTypeCenter{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.imgTypeLeft{
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+}
+.imgTypeRight{
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+/* heading */
+.sectionHeaderGroup{
+    margin-bottom: calc(100vw * (50/1920));
+    text-align: center;
+}
+.sectionHeader{
+    font-family: "TITLE";
+    font-size: calc(100vw * 54/1920);
+    text-transform: uppercase;
+    color: white;
+}
+.sectionSubHeader{
+    font-family: "SUB";
+    font-size: calc(100vw * 24/1920);
+    color: white;
+}

@@ -1,0 +1,107 @@
+
+#invest{
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+}
+#investWrap{
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#investCardWrap{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+#investCardWrap li{
+    width: 28vw;
+    height: 28vw; 
+    position: relative;
+    box-shadow: 3px 3px 15px #191919;
+    border-radius: calc(100vw * (15/1920));
+    
+}
+#investCardWrap li div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191919; 
+    opacity: 0.5;
+    border-radius: calc(100vw * (15/1920));
+}
+#investCardWrap li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: calc(100vw * (40/1920));
+    display: flex;   
+    border-radius: calc(100vw * (15/1920));
+    background-size: 160%;
+}
+#investCardWrap li a dl{
+    color: white;
+    width: 60%;
+    height: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+#requestCard a dl{
+    align-items: flex-end;
+}
+#investCardWrap li a dl dt span{
+    text-transform: uppercase;
+    font-size: calc(100vw * (20/1920));
+    font-family: "SUB";
+}
+#investCardWrap li a dl dt{
+    font-size: calc(100vw * (53/1920));
+    font-family: "TITLE";
+    line-height: calc(100vw * (40/1920));
+}
+#investCardWrap li a dl dd{
+    text-transform: uppercase;
+    font-size: calc(100vw * (18/1920));
+    font-family: "SUB";
+}
+#investCardWrap li a dl dd:last-of-type{
+    width: calc(100vw * (133/1920));
+    height: calc(100vw * (48/1920));
+    line-height: calc(100vw * (48/1920));
+    text-align: center;
+    background-color: #9747FF;
+    font-weight: 600;
+    border-radius: calc(100vw * (10/1920));
+}
+#investCard{
+    position: absolute;
+    left: 10px;
+}
+#requestCard{
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+#investCard a{
+    background-image: url(../img/Invest/Request.png);
+}
+#requestCard a{
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(../img/Invest/Invest.png);
+    text-align: right;
+}
+/* @media all and (max-width: 1200px){
+    #invest{
+        height: 100vh;
+    }
+} */
